@@ -1,6 +1,7 @@
 # tools
 
-To test connections and outputs.
+To test connections and outputs.  
+https://hub.docker.com/repository/docker/hcwalfisch/tools
 
 ## run
 
@@ -8,13 +9,8 @@ To test connections and outputs.
 
 ## tag & push
 
-    git tag 1.0.0 && docker build -t hcwalfisch/tools:1.0.0 . && docker push hcwalfisch/tools:1.0.0
-    git push --tags
-
-## latest is special, let's force
-
-    git tag -f latest && docker build -t hcwalfisch/tools:latest . && docker push hcwalfisch/tools:latest
-    git push --tags -f
+    docker login docker.io # just once or so
+    ./tag
 
 ## I solemnly swear that I am up to no good
 
