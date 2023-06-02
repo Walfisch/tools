@@ -38,3 +38,4 @@ docker build -t hcwalfisch/tools:latest .
 docker push hcwalfisch/tools:latest
 
 git push -f --tags
+git push
