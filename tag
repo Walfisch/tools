@@ -2,8 +2,11 @@
 set -Eeuo pipefail
 IFS=$'\n\t'
 
-## Usage: ./tag [-v version]
-## if version is not specified, will create a patch version
+## tag (and push tagged version to github.com and hub.docker.com)
+##
+## -h            print this help
+## -v <version>  specify current version
+##               (default: increment patch version of file VERSION)
 
 cd "${0%/*}"
 
