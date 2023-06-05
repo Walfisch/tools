@@ -14,4 +14,4 @@ https://hub.docker.com/repository/docker/hcwalfisch/tools
 
 ## I solemnly swear that I am up to no good
 
-    kubectl -n $NAMESPACE run -it --tty --rm debug --image=hcwalfisch/tools:latest --restart=Never -- bash
+    kubectl -n default run -it --tty --rm debug-delete-me --image=hcwalfisch/tools:latest --restart=Never -- bash
