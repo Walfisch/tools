@@ -29,7 +29,7 @@ done
 printf -- '%s' "$version" > VERSION
 
 git add VERSION
-git commit -m "Bump version to $version"
+git commit -m "Bump version to $version" || :
 
 git tag -f "$version"
 git tag -f latest
