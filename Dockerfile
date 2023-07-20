@@ -9,9 +9,13 @@ RUN apk add --no-cache \
 
     # dig, host, nslookup, ...
     bind-tools \
+    dog \
 
     # awk, ftpget, ftpput, ping, telnet, tftp, traceroute, ...
     busybox-extras \
+
+    # not installable via pip, for some reason
+    jq \
 
     mysql-client \
     postgresql-client \
@@ -25,7 +29,6 @@ RUN apk add --no-cache \
 
 RUN python3 -m ensurepip
 RUN pip3 install \
-    jq \
     xq \
     yq
 
