@@ -13,6 +13,8 @@ RUN apk add --no-cache \
         dog \
         # http
         curl \
+        openssh \
+        rsync \
         wget \
     # database
         mysql-client \
@@ -30,6 +32,7 @@ RUN apk add --no-cache \
 
 RUN python3 -m ensurepip
 RUN pip3 install \
+    awscli \
     xq
 
 CMD ["/bin/bash"]
