@@ -11,8 +11,9 @@ RUN apk add --no-cache \
         # dig, host, nslookup, ...
         bind-tools \
         dog \
-        # http
+        # http and more
         curl \
+        lftp \
         openssh \
         rsync \
         wget \
