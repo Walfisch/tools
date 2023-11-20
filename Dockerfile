@@ -27,6 +27,7 @@ RUN apk add --no-cache \
     # misc
         # awk, ftpget, ftpput, ping, telnet, tftp, traceroute, ...
         busybox-extras \
+        vim \
         # not installable via pip, for some reason
         jq \
         yq
