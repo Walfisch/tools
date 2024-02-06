@@ -27,13 +27,13 @@ RUN apk add --no-cache \
     # misc
         # awk, ftpget, ftpput, ping, telnet, tftp, traceroute, ...
         busybox-extras \
+        py3-pip \
         vim \
-        # not installable via pip, for some reason
+        wrk \
         jq \
         yq
 
-RUN python3 -m ensurepip
-RUN pip3 install \
+RUN pip3 install --break-system-packages \
     awscli \
     xq
 
