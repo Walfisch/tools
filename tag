@@ -34,10 +34,8 @@ git commit -m "Bump version to $version" || :
 git tag -f "$version"
 git tag -f latest
 
-docker build -t hcwalfisch/tools:"$version" .
+docker build -t hcwalfisch/tools:"$version" -t hcwalfisch/tools:latest .
 docker push hcwalfisch/tools:"$version"
-
-docker build -t hcwalfisch/tools:latest .
 docker push hcwalfisch/tools:latest
 
 git push -f --tags
